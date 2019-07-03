@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="root" prefHeight="608.0" prefWidth="928.0" style="-fx-background-color: linear-gradient(to top,rgb(148, 115, 221) 20%,rgb(26, 201, 228) 100%);" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fr.epita.quiz.launcher.Create_QuizJavaController">
+   <children>
+      <ScrollPane layoutX="9.0" layoutY="103.0" prefHeight="154.0" prefWidth="978.0">
+        <content>
+          <AnchorPane fx:id="anchor" minHeight="0.0" minWidth="0.0" prefHeight="120.0" prefWidth="9000.0">
+               <children>
+                  <Label fx:id="label_question" layoutY="-6.0" prefHeight="126.0" prefWidth="1002.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="-6.0">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+        </content>
+      </ScrollPane>
+      <Label fx:id="tf_Question_number" alignment="CENTER" layoutX="318.0" layoutY="33.0" prefHeight="60.0" prefWidth="358.0" text="Question 1" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+      </Label>
+      <RadioButton fx:id="Radio_1" layoutX="41.0" layoutY="287.0" mnemonicParsing="false" prefHeight="70.0" prefWidth="954.0" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <toggleGroup>
+            <ToggleGroup fx:id="a" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="Radio_2" layoutX="41.0" layoutY="380.0" mnemonicParsing="false" prefHeight="70.0" prefWidth="954.0" textFill="WHITE" toggleGroup="$a">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="Radio_3" layoutX="41.0" layoutY="468.0" mnemonicParsing="false" prefHeight="70.0" prefWidth="954.0" textFill="WHITE" toggleGroup="$a">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </RadioButton>
+      <Button layoutX="385.0" layoutY="529.0" mnemonicParsing="false" onAction="#submit" prefHeight="54.0" prefWidth="226.0" text="Submit" textFill="#9c0000">
+         <font>
+            <Font name="System Bold Italic" size="24.0" />
+         </font>
+      </Button>
+      <Label fx:id="empty_label" alignment="CENTER" layoutX="631.0" layoutY="536.0" prefHeight="60.0" prefWidth="358.0" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+      </Label>
+      <Button fx:id="btn_Main_menu" layoutX="105.0" layoutY="529.0" mnemonicParsing="false" onAction="#go_to_main_menu" prefHeight="54.0" prefWidth="226.0" text="Main Menu" textFill="#9c0000" visible="false">
+         <font>
+            <Font name="System Bold Italic" size="24.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

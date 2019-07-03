@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="root" prefHeight="693.0" prefWidth="928.0" style="-fx-background-color: linear-gradient(to top,rgb(148, 115, 221) 20%,rgb(26, 201, 228) 100%);" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fr.epita.quiz.launcher.Main_menuController">
+   <children>
+      <Button layoutX="329.0" layoutY="378.0" mnemonicParsing="false" onAction="#create_quiz" prefHeight="72.0" prefWidth="240.0" style="-fx-background-color: linear-gradient(to top,white,rgb(26, 201, 228) 100%);" text="Create a quiz" textFill="#940000">
+         <font>
+            <Font name="System Bold Italic" size="24.0" />
+         </font>
+      </Button>
+      <Button layoutX="329.0" layoutY="572.0" mnemonicParsing="false" onAction="#quit" prefHeight="72.0" prefWidth="240.0" style="-fx-background-color: linear-gradient(to top,white,rgb(26, 201, 228) 100%);" text="quit" textFill="#940000">
+         <font>
+            <Font name="System Bold Italic" size="24.0" />
+         </font>
+      </Button>
+      <Label alignment="CENTER" layoutX="262.0" layoutY="30.0" prefHeight="65.0" prefWidth="403.0" text="Quiz Creator" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="48.0" />
+         </font>
+      </Label>
+      <RadioButton fx:id="java" layoutX="613.0" layoutY="287.0" mnemonicParsing="false" text="Java" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+         <toggleGroup>
+            <ToggleGroup fx:id="b" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="math" layoutX="760.0" layoutY="287.0" mnemonicParsing="false" text="Math" textFill="WHITE" toggleGroup="$b">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </RadioButton>
+      <Button layoutX="328.0" layoutY="269.0" mnemonicParsing="false" onAction="#create_question" prefHeight="72.0" prefWidth="240.0" style="-fx-background-color: linear-gradient(to top,white,rgb(26, 201, 228) 100%);" text="Create a question" textFill="#940000">
+         <font>
+            <Font name="System Bold Italic" size="24.0" />
+         </font>
+      </Button>
+      <Label fx:id="empty_label_create_question" alignment="CENTER" layoutX="42.0" layoutY="270.0" prefHeight="70.0" prefWidth="240.0" textFill="WHITE">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <RadioButton fx:id="quiz_java" layoutX="614.0" layoutY="397.0" mnemonicParsing="false" text="Java" textFill="WHITE" toggleGroup="$b">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="quiz_math" layoutX="761.0" layoutY="397.0" mnemonicParsing="false" text="Math" textFill="WHITE" toggleGroup="$b">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </RadioButton>
+      <Label fx:id="empty_label_create_quiz" alignment="CENTER" layoutX="42.0" layoutY="379.0" prefHeight="70.0" prefWidth="240.0" textFill="WHITE">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <RadioButton fx:id="radio_1" layoutX="14.0" layoutY="470.0" mnemonicParsing="false" text="Very easy" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+         <toggleGroup>
+            <ToggleGroup fx:id="c" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="radio_2" layoutX="191.0" layoutY="469.0" mnemonicParsing="false" text="Easy" textFill="WHITE" toggleGroup="$c">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="radio_3" layoutX="312.0" layoutY="469.0" mnemonicParsing="false" text="Medium" textFill="WHITE" toggleGroup="$c">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="radio_4" layoutX="464.0" layoutY="470.0" mnemonicParsing="false" text="Hard" textFill="WHITE" toggleGroup="$c">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="radio_5" layoutX="598.0" layoutY="470.0" mnemonicParsing="false" text="Very hard" textFill="WHITE" toggleGroup="$c">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="radio_6" layoutX="778.0" layoutY="470.0" mnemonicParsing="false" text="Extreme" textFill="WHITE" toggleGroup="$c">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="Java_delete" layoutX="615.0" layoutY="169.0" mnemonicParsing="false" text="Java" textFill="WHITE" toggleGroup="$b">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="Math_delete" layoutX="762.0" layoutY="169.0" mnemonicParsing="false" text="Math" textFill="WHITE" toggleGroup="$b">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </RadioButton>
+      <Button layoutX="287.0" layoutY="151.0" mnemonicParsing="false" onAction="#delete_update" prefHeight="72.0" prefWidth="322.0" style="-fx-background-color: linear-gradient(to top,white,rgb(26, 201, 228) 100%);" text="Delete/Update Question" textFill="#940000">
+         <font>
+            <Font name="System Bold Italic" size="24.0" />
+         </font>
+      </Button>
+      <Label fx:id="empty_label_delete_update" alignment="CENTER" layoutX="42.0" layoutY="151.0" prefHeight="70.0" prefWidth="240.0" textFill="WHITE">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

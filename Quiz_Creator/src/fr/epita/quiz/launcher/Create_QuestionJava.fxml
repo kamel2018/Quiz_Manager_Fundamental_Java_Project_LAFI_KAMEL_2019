@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="root" prefHeight="608.0" prefWidth="928.0" style="-fx-background-color: linear-gradient(to top,rgb(148, 115, 221) 20%,rgb(26, 201, 228) 100%);" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fr.epita.quiz.launcher.Create_QuestionJavaController">
+   <children>
+      <Label alignment="CENTER" layoutX="248.0" layoutY="12.0" prefHeight="65.0" prefWidth="403.0" text="Question Creator" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="48.0" />
+         </font>
+      </Label>
+      <Label fx:id="empty_label" alignment="CENTER" layoutX="604.0" layoutY="527.0" prefHeight="70.0" prefWidth="310.0" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="48.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="102.0" layoutY="118.0" prefHeight="14.0" prefWidth="290.0" text="Question" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="99.0" layoutY="251.0" prefHeight="14.0" prefWidth="290.0" text="Answer" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="80.0" layoutY="327.0" prefHeight="54.0" prefWidth="335.0" text="2nd answer(wrong)" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="76.0" layoutY="401.0" prefHeight="54.0" prefWidth="335.0" text="3rd answer(wrong)" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="tf_question" layoutX="437.0" layoutY="90.0" prefHeight="142.0" prefWidth="403.0">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </TextArea>
+      <TextField fx:id="tf_ans" layoutX="438.0" layoutY="261.0" prefHeight="51.0" prefWidth="403.0">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="tf_wrong1" layoutX="437.0" layoutY="328.0" prefHeight="51.0" prefWidth="403.0">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="tf_wrong2" layoutX="437.0" layoutY="402.0" prefHeight="51.0" prefWidth="403.0">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </TextField>
+      <Button layoutX="399.0" layoutY="536.0" mnemonicParsing="false" onAction="#submit" prefHeight="51.0" prefWidth="130.0" text="Submit" />
+      <Label alignment="CENTER" layoutX="4.0" layoutY="72.0" prefHeight="35.0" prefWidth="243.0" text="Java question (MCQ)" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Button layoutX="45.0" layoutY="536.0" mnemonicParsing="false" onAction="#main_menu" prefHeight="51.0" prefWidth="164.0" text="back to main menu" />
+      <RadioButton fx:id="radio_1" layoutX="14.0" layoutY="491.0" mnemonicParsing="false" text="Very easy" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+         <toggleGroup>
+            <ToggleGroup fx:id="d" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="radio_2" layoutX="191.0" layoutY="490.0" mnemonicParsing="false" text="Easy" textFill="WHITE" toggleGroup="$d">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="radio_3" layoutX="312.0" layoutY="490.0" mnemonicParsing="false" text="Medium" textFill="WHITE" toggleGroup="$d">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="radio_4" layoutX="464.0" layoutY="491.0" mnemonicParsing="false" text="Hard" textFill="WHITE" toggleGroup="$d">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="radio_5" layoutX="598.0" layoutY="491.0" mnemonicParsing="false" text="Very hard" textFill="WHITE" toggleGroup="$d">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="radio_6" layoutX="778.0" layoutY="491.0" mnemonicParsing="false" text="Extreme" textFill="WHITE" toggleGroup="$d">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </RadioButton>
+   </children>
+</AnchorPane>
